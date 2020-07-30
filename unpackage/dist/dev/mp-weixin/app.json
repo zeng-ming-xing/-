@@ -1,0 +1,48 @@
+{
+  "pages": [
+    "pages/main/main",
+    "pages/index/index",
+    "pages/category/category",
+    "pages/login/login",
+    "pages/user/user",
+    "pages/details/details",
+    "pages/search/search",
+    "pages/recommend/recommend"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "backgroundColor": "#FFFFFF",
+    "color": "#C8C7CC",
+    "selectedColor": "#2C405A",
+    "list": [
+      {
+        "text": "首页",
+        "iconPath": "static/shouye.png",
+        "pagePath": "pages/main/main"
+      },
+      {
+        "text": "推荐",
+        "iconPath": "static/detail.png",
+        "pagePath": "pages/details/details"
+      },
+      {
+        "text": "分类",
+        "iconPath": "static/category (2).png",
+        "pagePath": "pages/recommend/recommend"
+      },
+      {
+        "text": "我的",
+        "iconPath": "static/wode.png",
+        "pagePath": "pages/user/user"
+      }
+    ]
+  },
+  "usingComponents": {},
+  "sitemapLocation": "sitemap25.json"
+}

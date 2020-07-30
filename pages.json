@@ -1,0 +1,99 @@
+{
+	"pages": [
+		{
+		    "path" : "pages/main/main",
+		    "style" : {
+				"navigationBarTitleText": "主页面"
+			}
+		},//pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "待用"
+			}
+		}
+        ,{
+            "path" : "pages/category/category",
+            "style" : {
+				"navigationBarTitleText": "分类"
+			}
+        }
+        ,
+		{
+            "path" : "pages/login/login",
+            "style" : {
+				"navigationBarTitleText": "登录"
+			}
+        },
+		{
+            "path" : "pages/user/user",
+            "style" : {
+				"navigationBarTitleText": "用户"
+			}
+        }
+        ,{
+            "path" : "pages/details/details",
+            "style" : {
+				"navigationBarTitleText": "详情"
+			}
+        }
+        ,{
+            "path" : "pages/search/search",
+            "style" : {
+				"navigationBarTitleText": "搜索"
+			}
+        }
+        ,{
+            "path" : "pages/recommend/recommend",
+            "style" : {
+				"navigationBarTitleText": "推荐"
+			}
+        }
+        
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+		
+	},
+	"tabBar":{
+		"backgroundColor":"#FFFFFF",
+		"color":"#C8C7CC",
+		"selectedColor":"#2C405A",
+		"list":[
+			{
+				"text":"首页",
+				"iconPath":"static/shouye.png",
+				"pagePath":"pages/main/main"
+				
+			},
+			{
+				"text":"推荐",
+				"iconPath":"static/detail.png",
+				"pagePath":"pages/details/details"
+			},
+			{
+				"text":"分类",	
+				"iconPath":"static/category (2).png",
+				"pagePath":"pages/recommend/recommend"
+				
+			},
+			{
+				"text":"我的",
+				"iconPath":"static/wode.png",
+				"pagePath":"pages/user/user"
+			}
+		]
+	},
+	"condition":{
+		"current":4,
+		"list":[
+			{
+				"name":"user",
+				"path":"pages/user/user"
+			}
+		]
+	}
+}
