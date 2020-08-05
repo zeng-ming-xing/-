@@ -1,37 +1,152 @@
-
-.content {
-	display: -webkit-box;
-	display: -webkit-flex;
-	display: flex;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	-webkit-flex-direction: column;
-	        flex-direction: column;
-	-webkit-box-align: center;
-	-webkit-align-items: center;
-	        align-items: center;
-	-webkit-box-pack: center;
-	-webkit-justify-content: center;
-	        justify-content: center;
+.index.data-v-57280228 {
+  width: 100%;
+  overflow: hidden;
 }
-.logo {
-	height: 200rpx;
-	width: 200rpx;
-	margin-top: 200rpx;
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 50rpx;
+.index .subject.data-v-57280228 {
+  position: fixed;
+  z-index: 9999;
+  width: 100%;
+  padding: 10rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  white-space: nowrap;
+  background-color: #CCCCCC;
+  height: 44rpx;
 }
-.text-area {
-	display: -webkit-box;
-	display: -webkit-flex;
-	display: flex;
-	-webkit-box-pack: center;
-	-webkit-justify-content: center;
-	        justify-content: center;
+.index .subject .subject_item.data-v-57280228 {
+  display: inline-block;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+          flex: 1;
+  padding: 0 30rpx;
+  height: 44rpx;
 }
-.title {
-	font-size: 36rpx;
-	color: #8f8f94;
+.index .subject .active.data-v-57280228 {
+  background-color: #F1F1F1;
+  border-radius: 20rpx;
+  color: red;
+}
+.index .goods_list.data-v-57280228 {
+  margin-top: 64rpx;
+  width: 100%;
+  height: calc(100vh - 64rpx);
+}
+.index .goods_list .showlist.data-v-57280228 {
+  background-color: #F1F1F1;
+  width: calc(100% - 1px);
+  border: 1px solid #F1F1F1;
+}
+.index .goods_list .showlist .list_item.data-v-57280228 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  margin: 20rpx auto;
+  background-color: #FFFFFF;
+  border-radius: 10rpx;
+  width: 90%;
+}
+.index .goods_list .showlist .list_item image.data-v-57280228 {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+          flex: 1;
+  border-radius: 10rpx;
+}
+.index .goods_list .showlist .list_item .goods_info.data-v-57280228 {
+  -webkit-box-flex: 2;
+  -webkit-flex: 2;
+          flex: 2;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  padding: 10rpx;
+}
+.index .goods_list .showlist .list_item .goods_info .title.data-v-57280228 {
+  -webkit-box-flex: 2;
+  -webkit-flex: 2;
+          flex: 2;
+  font-size: 26rpx;
+}
+.index .goods_list .showlist .list_item .goods_info .juan.data-v-57280228 {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+          flex: 1;
+  padding: 10rpx 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+}
+.index .goods_list .showlist .list_item .goods_info .juan .price.data-v-57280228 {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+          flex: 1;
+  color: #98a3ab;
+}
+.index .goods_list .showlist .list_item .goods_info .juan .price text.data-v-57280228 {
+  text-decoration: line-through;
+}
+.index .goods_list .showlist .list_item .goods_info .juan .cell_num.data-v-57280228 {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+          flex: 1;
+}
+.index .goods_list .showlist .list_item .goods_info .make.data-v-57280228 {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+          flex: 1;
+  padding: 10rpx 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+}
+.index .goods_list .showlist .list_item .goods_info .make .up.data-v-57280228 {
+  -webkit-box-flex: 3;
+  -webkit-flex: 3;
+          flex: 3;
+  font-size: 23rpx;
+  color: red;
+  text-align: right;
+}
+.index .goods_list .showlist .list_item .goods_info .make .coup_price.data-v-57280228 {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+          flex: 1;
+  font-size: 30rpx;
+  background-color: red;
+  color: #FFFFFF;
+  border-radius: 10rpx;
+}
+.index .goods_list .showlist .list_item .goods_info .make .coup_price .bo.data-v-57280228 {
+  border-right: 1rpx dashed #FFFFFF;
+}
+.index .goods_list .showlist .list_item .goods_info .ceil.data-v-57280228 {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  color: red;
+}
+.index .goods_list .showlist .list_item .goods_info .ceil .after_price.data-v-57280228 {
+  font-size: 30rpx;
+}
+.index .goods_list .showlist .list_item .goods_info .ceil .make_m.data-v-57280228 {
+  color: #FFFFFF;
+  background-color: #ff530f;
+  border-top-left-radius: 25rpx;
 }
 

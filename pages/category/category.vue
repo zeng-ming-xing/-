@@ -5,6 +5,8 @@
 </template>
 
 <script>
+	import {request} from "../../request/request.js"
+	
 	export default {
 		data() {
 			return {
@@ -12,6 +14,9 @@
 			}
 		},
 		methods: {
+			
+		},
+		onLoad(){
 			
 		}
 	}

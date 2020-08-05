@@ -1,0 +1,122 @@
+.themes.data-v-942e86cc {
+  width: 100%;
+}
+.themes .theme_img.data-v-942e86cc {
+  width: 100%;
+}
+.themes .theme_img image.data-v-942e86cc {
+  width: 100%;
+}
+.themes .theme_contact.data-v-942e86cc {
+  width: calc(100% - 40rpx);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+          flex-wrap: wrap;
+  padding: 20rpx;
+  -webkit-justify-content: space-around;
+          justify-content: space-around;
+}
+.themes .theme_contact .theme_item.data-v-942e86cc {
+  width: 48%;
+}
+.themes .theme_contact .theme_item image.data-v-942e86cc {
+  width: 100%;
+  border-radius: 20rpx;
+}
+.themes .theme_contact .theme_item .dis.data-v-942e86cc {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+.themes .theme_contact .theme_item .dis .item_name.data-v-942e86cc {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.themes .theme_contact .theme_item .item_account.data-v-942e86cc {
+  padding-top: 13rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  padding: 10rpx;
+  height: 18vh;
+}
+.themes .theme_contact .theme_item .item_account .priviliege.data-v-942e86cc {
+  -webkit-box-flex: 2;
+  -webkit-flex: 2;
+          flex: 2;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+.themes .theme_contact .theme_item .item_account .priviliege .juan.data-v-942e86cc {
+  background-color: #FF3333;
+  color: #FFFFFF;
+}
+.themes .theme_contact .theme_item .item_account .priviliege .juan .j_r.data-v-942e86cc {
+  border-right: 1px dashed #FFFFFF;
+}
+.themes .theme_contact .theme_item .item_account .priviliege .juan_m.data-v-942e86cc {
+  color: #FF3333;
+}
+.themes .theme_contact .theme_item .item_account .priviliege .juan_m .after_m.data-v-942e86cc {
+  font-size: 45rpx;
+}
+.themes .theme_contact .theme_item .item_account .count.data-v-942e86cc {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  color: #999999;
+}
+.themes .theme_contact .theme_item .item_account .count .delete.data-v-942e86cc {
+  text-decoration: line-through;
+  text-line-through-color: #999999;
+}
+.themes .theme_contact .theme_item .item_account .make_m.data-v-942e86cc {
+  -webkit-box-flex: 2;
+  -webkit-flex: 2;
+          flex: 2;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  background-color: #FF3300;
+  border-bottom-left-radius: 10rpx;
+  border-bottom-right-radius: 10rpx;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+.themes .theme_contact .theme_item .item_account .make_m .up_vip.data-v-942e86cc {
+  color: #660000;
+}
+.themes .theme_contact .theme_item .item_account .make_m .up_make.data-v-942e86cc {
+  color: #FFFFFF;
+}
+.themes .theme_contact .theme_item .item_account .make_m .up_make text.data-v-942e86cc {
+  font-size: 38rpx;
+}
+

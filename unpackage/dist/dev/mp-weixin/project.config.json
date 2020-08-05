@@ -6,36 +6,12 @@
 	"setting": {
 		"urlCheck": false,
 		"es6": true,
-		"enhance": false,
-		"postcss": true,
-		"preloadBackgroundData": false,
-		"minified": true,
-		"newFeature": false,
-		"coverView": true,
-		"nodeModules": false,
-		"autoAudits": false,
-		"showShadowRootInWxmlPanel": true,
-		"scopeDataCheck": false,
-		"uglifyFileName": false,
-		"checkInvalidKey": true,
-		"checkSiteMap": true,
-		"uploadWithSourceMap": true,
-		"compileHotReLoad": false,
-		"babelSetting": {
-			"ignore": [],
-			"disablePlugins": [],
-			"outputPath": ""
-		},
-		"useIsolateContext": true,
-		"useCompilerModule": true,
-		"userConfirmedUseCompilerModuleSwitch": false,
-		"packNpmManually": false,
-		"packNpmRelationList": []
+		"postcss": true
 	},
 	"compileType": "miniprogram",
 	"libVersion": "",
 	"appid": "wx06a0600e61685d9e",
-	"projectname": "%E4%BC%98%E6%83%A0%E8%B4%AD",
+	"projectname": "优惠购",
 	"simulatorType": "wechat",
 	"simulatorPluginLibVersion": {},
 	"condition": {
@@ -58,6 +34,34 @@
 					"name": "user",
 					"id": 0,
 					"pathName": "pages/user/user"
+				},
+				{
+					"name": "recommend",
+					"id": 1,
+					"pathName": "pages/recommend/recommend"
+				},
+				{
+					"name": "主题",
+					"query": "id=7610&img_url=https://t16img.yangkeduo.com/pdd_oms/2020-06-10/8dec236116d3a0bc3b6987eb21bf13d8.jpg",
+					"id": 2,
+					"pathName": "pages/theme/theme"
+				},
+				{
+					"name": "主页",
+					"id": 3,
+					"pathName": "pages/main/main"
+				},
+				{
+					"name": "展示",
+					"query": "id=0",
+					"id": 4,
+					"pathName": "pages/index/index"
+				},
+				{
+					"name": "详情",
+					"query": "",
+					"id": 5,
+					"pathName": "pages/details/details"
 				}
 			]
 		}

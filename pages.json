@@ -1,99 +1,133 @@
 {
-	"pages": [
-		{
-		    "path" : "pages/main/main",
-		    "style" : {
-				"navigationBarTitleText": "主页面"
+	"pages": [{
+			"path": "pages/main/main",
+			"style": {
+				"navigationStyle": "custom"
+
 			}
-		},//pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		}, //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
 		{
 			"path": "pages/index/index",
 			"style": {
-				"navigationBarTitleText": "待用"
+				"navigationBarTitleText": "展示"
 			}
-		}
-        ,{
-            "path" : "pages/category/category",
-            "style" : {
+		}, {
+			"path": "pages/category/category",
+			"style": {
 				"navigationBarTitleText": "分类"
 			}
-        }
-        ,
+		},
 		{
-            "path" : "pages/login/login",
-            "style" : {
+			"path": "pages/login/login",
+			"style": {
 				"navigationBarTitleText": "登录"
 			}
-        },
+		},
 		{
-            "path" : "pages/user/user",
-            "style" : {
+			"path": "pages/user/user",
+			"style": {
 				"navigationBarTitleText": "用户"
 			}
-        }
-        ,{
-            "path" : "pages/details/details",
-            "style" : {
-				"navigationBarTitleText": "详情"
+		}, {
+			"path": "pages/details/details",
+			"style": {
+				"navigationStyle": "custom"
 			}
-        }
-        ,{
-            "path" : "pages/search/search",
-            "style" : {
+		}, {
+			"path": "pages/search/search",
+			"style": {
 				"navigationBarTitleText": "搜索"
 			}
-        }
-        ,{
-            "path" : "pages/recommend/recommend",
-            "style" : {
-				"navigationBarTitleText": "推荐"
+		}, {
+			"path": "pages/recommend/recommend",
+			"style": {
+				"navigationBarTitleText": "专题"
 			}
-        }
-        
+		}
+
+		, {
+			"path": "pages/theme/theme",
+			"style": {
+				"navigationBarTitleText": "主题"
+			}
+		}, {
+			"path": "pages/find/find",
+			"style": {
+				"navigationBarTitleText": "发现"
+
+			}
+		}
+	    
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "uni-app",
 		"navigationBarBackgroundColor": "#F8F8F8",
 		"backgroundColor": "#F8F8F8"
-		
+
 	},
-	"tabBar":{
-		"backgroundColor":"#FFFFFF",
-		"color":"#C8C7CC",
-		"selectedColor":"#2C405A",
-		"list":[
-			{
-				"text":"首页",
-				"iconPath":"static/shouye.png",
-				"pagePath":"pages/main/main"
-				
+	"tabBar": {
+		"backgroundColor": "#FFFFFF",
+		"color": "#C8C7CC",
+		"selectedColor": "#2C405A",
+		"list": [{
+				"text": "首页",
+				"iconPath": "static/shouye.png",
+				"pagePath": "pages/main/main",
+				"selectedIconPath": "static/11/shouye.png"
+
 			},
 			{
-				"text":"推荐",
-				"iconPath":"static/detail.png",
-				"pagePath":"pages/details/details"
+				"text": "专题",
+				"iconPath": "static/detail.png",
+				"pagePath": "pages/recommend/recommend",
+				"selectedIconPath": "static/11/tuijian.png"
 			},
 			{
-				"text":"分类",	
-				"iconPath":"static/category (2).png",
-				"pagePath":"pages/recommend/recommend"
-				
+				"text": "发现",
+				"iconPath": "static/category (2).png",
+				"pagePath": "pages/find/find",
+				"selectedIconPath": "static/11/chazhao.png"
+
 			},
 			{
-				"text":"我的",
-				"iconPath":"static/wode.png",
-				"pagePath":"pages/user/user"
+				"text": "我的",
+				"iconPath": "static/wode.png",
+				"pagePath": "pages/user/user",
+				"selectedIconPath": "static/11/my.png"
 			}
 		]
 	},
-	"condition":{
-		"current":4,
-		"list":[
+	"condition": {
+		"current": 4,
+		"list": [{
+				"name": "user",
+				"path": "pages/user/user"
+			},
 			{
-				"name":"user",
-				"path":"pages/user/user"
+				"name": "recommend",
+				"path": "pages/recommend/recommend"
+			},
+			{
+				"name": "主题",
+				"path": "pages/theme/theme",
+				"query": "id=7610&img_url=https://t16img.yangkeduo.com/pdd_oms/2020-06-10/8dec236116d3a0bc3b6987eb21bf13d8.jpg"
+			},
+			{
+				"name": "主页",
+				"path": "pages/main/main"
+			},
+			{
+				"name": "展示",
+				"path": "pages/index/index",
+				"query": "id=0"
+			},
+			{
+				"name": "详情",
+				"path": "pages/details/details",
+				"query": ""
 			}
+
 		]
 	}
 }

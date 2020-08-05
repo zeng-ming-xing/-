@@ -1,6 +1,4 @@
-.navbar.data-v-2149950b {
-  width: 100%;
-  height: 44px;
+.common.data-v-2149950b {
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;
@@ -11,22 +9,29 @@
   -webkit-align-items: center;
           align-items: center;
 }
+.navbar.data-v-2149950b {
+  width: 100%;
+  height: 80rpx;
+}
 .navbar .left.data-v-2149950b {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
           flex: 1;
   text-align: center;
+  height: 100%;
 }
 .navbar .center.data-v-2149950b {
   -webkit-box-flex: 3;
   -webkit-flex: 3;
           flex: 3;
   text-align: center;
+  height: 100%;
 }
 .navbar .right.data-v-2149950b {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
           flex: 1;
   text-align: center;
+  height: 100%;
 }
 

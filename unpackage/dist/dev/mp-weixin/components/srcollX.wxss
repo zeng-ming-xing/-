@@ -1,0 +1,111 @@
+.show-today.data-v-a71a93fc {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  white-space: nowrap;
+  height: 500rpx;
+}
+.show-today .show_d_item.data-v-a71a93fc {
+  background-color: #FFFFFF;
+  border-radius: 10rpx;
+  display: inline-block;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+          flex: 1;
+  padding: 0 20rpx ;
+  margin-right: 20rpx;
+}
+.show-today .show_d_item image.data-v-a71a93fc {
+  width: 250rpx;
+  margin-top: 20rpx;
+  border-radius: 10rpx;
+}
+.show-today .show_d_item .show_info.data-v-a71a93fc {
+  width: 250rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+}
+.show-today .show_d_item .title.data-v-a71a93fc {
+  -webkit-box-flex: 2;
+  -webkit-flex: 2;
+          flex: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.show-today .show_d_item .after_juan.data-v-a71a93fc {
+  -webkit-box-flex: 2;
+  -webkit-flex: 2;
+          flex: 2;
+  color: red;
+  text-align: center;
+  padding: 10rpx 0;
+}
+.show-today .show_d_item .cell.data-v-a71a93fc {
+  padding-bottom: 10rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+          flex: 1;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  font-size: 30rpx;
+}
+.show-today .show_d_item .cell .cell_num.data-v-a71a93fc {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+          flex: 1;
+  color: #808080;
+}
+.show-today .show_d_item .cell .juan_num.data-v-a71a93fc {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+          flex: 1;
+  background-color: #d92111;
+  color: #FFFFFF;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-around;
+          justify-content: space-around;
+}
+.show-today .show_d_item .cell .left.data-v-a71a93fc {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+          flex: 1;
+  border-right: 1px dashed #FFFFFF;
+}
+.show-today .show_d_item .cell .right.data-v-a71a93fc {
+  -webkit-box-flex: 2;
+  -webkit-flex: 2;
+          flex: 2;
+  text-align: center;
+}
+.show-today .show_d_item .Gobuy.data-v-a71a93fc {
+  -webkit-box-flex: 2;
+  -webkit-flex: 2;
+          flex: 2;
+  padding: 9rpx 0;
+  background-color: #d96f3a;
+  border-radius: 10rpx;
+  color: #FFFFFF;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+}
+

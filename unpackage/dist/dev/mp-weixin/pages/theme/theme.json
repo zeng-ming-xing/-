@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "主题",
+  "usingComponents": {
+    "uni-icons": "/components/uni-icons/uni-icons"
+  }
+}

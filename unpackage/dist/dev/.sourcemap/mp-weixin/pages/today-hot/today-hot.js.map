@@ -1,0 +1,1 @@
+{"version":3,"sources":["uni-app:///main.js"],"names":["createPage","Page"],"mappings":";;;;;;;;;;kDAAA;AACA;AACA,yG;AACAA,UAAU,CAACC,iBAAD,CAAV,C","file":"pages/today-hot/today-hot.js","sourcesContent":["import 'uni-pages';\nimport Vue from 'vue'\nimport Page from './pages/today-hot/today-hot.nvue'\ncreatePage(Page)"],"sourceRoot":""}

@@ -1,4 +1,6 @@
 {
-  "navigationBarTitleText": "推荐",
-  "usingComponents": {}
+  "navigationBarTitleText": "专题",
+  "usingComponents": {
+    "navbar": "/components/navbar"
+  }
 }

@@ -7,7 +7,9 @@
     "pages/user/user",
     "pages/details/details",
     "pages/search/search",
-    "pages/recommend/recommend"
+    "pages/recommend/recommend",
+    "pages/theme/theme",
+    "pages/find/find"
   ],
   "subPackages": [],
   "window": {
@@ -24,25 +26,29 @@
       {
         "text": "首页",
         "iconPath": "static/shouye.png",
-        "pagePath": "pages/main/main"
+        "pagePath": "pages/main/main",
+        "selectedIconPath": "static/11/shouye.png"
       },
       {
-        "text": "推荐",
+        "text": "专题",
         "iconPath": "static/detail.png",
-        "pagePath": "pages/details/details"
+        "pagePath": "pages/recommend/recommend",
+        "selectedIconPath": "static/11/tuijian.png"
       },
       {
-        "text": "分类",
+        "text": "发现",
         "iconPath": "static/category (2).png",
-        "pagePath": "pages/recommend/recommend"
+        "pagePath": "pages/find/find",
+        "selectedIconPath": "static/11/chazhao.png"
       },
       {
         "text": "我的",
         "iconPath": "static/wode.png",
-        "pagePath": "pages/user/user"
+        "pagePath": "pages/user/user",
+        "selectedIconPath": "static/11/my.png"
       }
     ]
   },
   "usingComponents": {},
-  "sitemapLocation": "sitemap25.json"
+  "sitemapLocation": "sitemap27.json"
 }

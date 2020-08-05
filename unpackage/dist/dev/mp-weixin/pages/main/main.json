@@ -1,6 +1,9 @@
 {
-  "navigationBarTitleText": "主页面",
+  "navigationStyle": "custom",
   "usingComponents": {
-    "navbar": "/components/navbar"
+    "uni-icons": "/components/uni-icons/uni-icons",
+    "scroll-x": "/components/srcollX",
+    "soft": "/components/soft",
+    "rank": "/components/rank"
   }
 }

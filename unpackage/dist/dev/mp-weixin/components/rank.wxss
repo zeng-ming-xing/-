@@ -1,0 +1,9 @@
+.rank {
+  width: 100%;
+  border: 1px solid;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  height: 90rpx;
+}
+

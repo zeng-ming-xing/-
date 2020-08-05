@@ -4,7 +4,30 @@
 .user .user_item.data-v-80842834 {
   width: 100%;
   height: 30vh;
-  background-color: #ffaa7f;
+  overflow: hidden;
+  position: relative;
+}
+.user .user_item .user_bac.data-v-80842834 {
+  width: 100%;
+  -webkit-filter: blur(10px);
+          filter: blur(10px);
+  position: absolute;
+  z-index: -99;
+}
+.user .user_item .user_login.data-v-80842834 {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  width: 50%;
 }
 .user .user_item .user_info.data-v-80842834 {
   width: 80%;
@@ -20,5 +43,198 @@
   -webkit-align-items: center;
           align-items: center;
   width: 50%;
+}
+.user .user_item .user_info image.data-v-80842834 {
+  width: 150rpx;
+  border-radius: 50%;
+}
+.user .user_move.data-v-80842834 {
+  margin: 0 auto;
+  width: 80%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  border-radius: 20rpx;
+  background-color: #F8F8F8;
+  margin-top: -30rpx;
+}
+.user .user_move .move_item.data-v-80842834 {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+          flex: 1;
+  text-align: center;
+}
+.user .user_move .move_item image.data-v-80842834 {
+  width: 50rpx;
+}
+.user .user_account.data-v-80842834 {
+  height: 300rpx;
+  width: 680rpx;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  background-color: white;
+  border-radius: 20rpx;
+  border: 1px solid #CCCCCC;
+}
+.user .user_account .common.data-v-80842834 {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  padding: 20rpx;
+}
+.user .user_account .my_account .title.data-v-80842834 {
+  color: #CCCCCC;
+  font-size: 30rpx;
+}
+.user .user_account .my_account .contact.data-v-80842834 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  height: calc(100% - 50rpx);
+  border-right: 1px solid #dae3f1;
+}
+.user .user_account .my_account .contact .account_ing.data-v-80842834 {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+          flex: 1;
+  padding: 10rpx;
+  color: #CCCCCC;
+}
+.user .user_account .my_account .contact .account_money.data-v-80842834 {
+  -webkit-box-flex: 3;
+  -webkit-flex: 3;
+          flex: 3;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  font-size: 40rpx;
+}
+.user .user_account .my_account .contact .account_date.data-v-80842834 {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+          flex: 1;
+  color: #CCCCCC;
+}
+.user .user_account .my_account .contact .num_account.data-v-80842834 {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+          flex: 1;
+}
+.user .user_account .account_details .title_right.data-v-80842834 {
+  text-align: right;
+  font-size: 30rpx;
+  color: #CCCCCC;
+}
+.user .user_account .account_details .r_account.data-v-80842834 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  height: calc(100% - 50rpx);
+}
+.user .user_account .account_details .r_account .r_ing.data-v-80842834 {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+          flex: 1;
+  padding: 10rpx;
+  color: #CCCCCC;
+}
+.user .user_account .account_details .r_account .r_money.data-v-80842834 {
+  -webkit-box-flex: 3;
+  -webkit-flex: 3;
+          flex: 3;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  font-size: 40rpx;
+}
+.user .user_account .account_details .r_account .goto.data-v-80842834 {
+  -webkit-box-flex: 2;
+  -webkit-flex: 2;
+          flex: 2;
+}
+.user .user_service.data-v-80842834 {
+  margin-top: 30rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  height: 400rpx;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+.user .user_service .common_service.data-v-80842834 {
+  margin: 20rpx 0;
+  font-size: 30rpx;
+  padding: 0 20px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+.user .user_service .common_service .l_contact.data-v-80842834 {
+  -webkit-box-flex: 2;
+  -webkit-flex: 2;
+          flex: 2;
+}
+.user .user_service .common_service .r_icon.data-v-80842834 {
+  -webkit-box-flex: 4;
+  -webkit-flex: 4;
+          flex: 4;
+  text-align: right;
 }
 
