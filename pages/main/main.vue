@@ -10,7 +10,7 @@
 			</view>
 			<view class="category">
 				<scroll-view class="cate" scroll-x="true" enable-flex="true">
-					<view @click="changeitem(v,i)" class="cate_item" v-for="(v,i) in list" :key="i" :class="{'active':index==i}">
+					<view @click="changeitem(i,v.id)" class="cate_item" v-for="(v,i) in list" :key="i" :class="{'active':index==i}">
 						{{v.name}}
 					</view>
 				</scroll-view>
@@ -18,9 +18,8 @@
 					全部<uni-icons type="more" color="#FFFFFF"></uni-icons>
 				</view>
 			</view>
-
 		</view>
-		<scroll-view scroll-y="true" class="main_view">
+		<scroll-view scroll-y="true" class="main_view"  @scrolltolower="scrollto">
 			<!--轮播-->
 			<swiper :indicator-dots="true" :autoplay="true" :interval="3000" :duration="1000">
 				<swiper-item v-for="(v,i) in swiperList" :key="v.id">
@@ -47,6 +46,7 @@
 			<soft></soft>
 			<!--排序-->
 			<rank></rank>
+			<showgoods :showgood="showgood"></showgoods>
 		</scroll-view>
 	</view>
 </template>
@@ -55,13 +55,16 @@
 	import scrollX from "../../components/srcollX.vue"
 	import soft from "../../components/soft.vue"
 	import rank from "../../components/rank.vue"
-
+    import showgoods from "../../components/showgoods.vue"
 	import {
 		request
 	} from '../../request/request.js'
 	export default {
 		data() {
 			return {
+				id:20100,
+				showgoodList_id:'',
+				showgood:[],
 				today:[],
 				swiperList: [],
 				index: 0,
@@ -164,8 +167,20 @@
 					})
 			},
 			//切换主题切换数据
-			changeitem(v, i) {
-				this.index = i
+			changeitem(i,id) {
+				this.index = i,
+				this.id=id
+				request({url:'/v1/pdd/goods-list',
+				method:"GET",data:{
+					cat_id:this.id
+				}}).then(res=>{
+					this.showgood=res.data.data.list;
+					this.showgoodList_id=res.data.data.list_id
+					console.log(this.showgood)
+				},err=>{
+					console.log(err)
+				})
+				
 			},
 			//轮播图主题跳转
 			Gotheme(v) {
@@ -187,13 +202,13 @@
 					data:{channel_type:7}
 				}).then(
 					res => {
-						console.log(res)
 						this.today=res.data.data.list;
 						this.list_id=res.data.data.list_id	
 					}, err => {
 						console.log(err)
 					})
 			},
+			//今日热卖滚动获取更多
 			Loadmore(){
 				request({
 					url: '/v1/pdd/goods-list',
@@ -203,24 +218,50 @@
 					  }
 				}).then(
 					res => {
-						console.log(res)
 						const list=res.data.data.list;
 						this.today.push(...list);
 						this.list_id=res.data.data.list_id	
 					}, err => {
 						console.log(err)
 					})
-			}
+			},
+			//根据id获取分类商品
+			getshowgood(){
+				request({url:'/v1/pdd/goods-list',
+				method:"GET",data:{
+					cat_id:this.id
+				}}).then(res=>{
+					this.showgood=res.data.data.list;
+					this.showgoodList_id=res.data.data.list_id
+				},err=>{
+					console.log(err)
+				})
+			},
+			//分类商品触底加载更多
+			scrollto(){
+				request({url:'/v1/pdd/goods-list',method:'GET',data:{
+					cat_id:this.id,
+					list_id:this.showgoodList_id
+				}}).then(res=>{
+					this.showgoodList_id=res.data.data.list_id;
+					let list=res.data.data.list;
+					this.showgood.push(...list)
+				},err=>{
+					console.log(err)
+				})
+			},
 		},
 		components: {
 			scrollX,
 			soft,
-			rank
+			rank,
+			showgoods
 			
 		},
 		mounted() {
 			this.getswiper()
 			this.getTodayShow()
+			this.getshowgood()
 		}
 
 
@@ -231,11 +272,11 @@
 <style lang="less" scoped>
 	.main {
 		width: 100%;
+		height: 100vh;
 		overflow: hidden;
-
 		/*导航*/
 		.nav {
-			height: 12vh;
+			height: 170rpx;
 			width: 100%;
 			background-color: #f09d66;
 			padding-top: 7%;
@@ -289,7 +330,6 @@
 
 			.navbar {
 				width: 100%;
-
 				.main_search {
 					border: 1px solid #CCCCCC;
 					border-radius: 30rpx;
@@ -308,6 +348,9 @@
 
 		/*滚动*/
 		.main_view {
+			height: calc(100vh - 220rpx);
+			margin-top: 220rpx;
+			width: 100%;
 			.today_hot{
 				width: calc(100%-40rpx);
 				padding: 20rpx;
@@ -331,8 +374,7 @@
 			
 			}
 			}
-			margin-top: 15vh;
-			width: 100%;
+
 			.swiper {
 				width: 100%;
 

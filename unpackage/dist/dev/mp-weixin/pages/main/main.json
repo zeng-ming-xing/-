@@ -4,6 +4,7 @@
     "uni-icons": "/components/uni-icons/uni-icons",
     "scroll-x": "/components/srcollX",
     "soft": "/components/soft",
-    "rank": "/components/rank"
+    "rank": "/components/rank",
+    "showgoods": "/components/showgoods"
   }
 }

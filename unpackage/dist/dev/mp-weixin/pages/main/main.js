@@ -192,12 +192,15 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _request = __webpack_require__(/*! ../../request/request.js */ 45);function _toConsumableArray(arr) {return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread();}function _nonIterableSpread() {throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");}function _unsupportedIterableToArray(o, minLen) {if (!o) return;if (typeof o === "string") return _arrayLikeToArray(o, minLen);var n = Object.prototype.toString.call(o).slice(8, -1);if (n === "Object" && o.constructor) n = o.constructor.name;if (n === "Map" || n === "Set") return Array.from(n);if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen);}function _iterableToArray(iter) {if (typeof Symbol !== "undefined" && Symbol.iterator in Object(iter)) return Array.from(iter);}function _arrayWithoutHoles(arr) {if (Array.isArray(arr)) return _arrayLikeToArray(arr);}function _arrayLikeToArray(arr, len) {if (len == null || len > arr.length) len = arr.length;for (var i = 0, arr2 = new Array(len); i < len; i++) {arr2[i] = arr[i];}return arr2;}var scrollX = function scrollX() {__webpack_require__.e(/*! require.ensure | components/srcollX */ "components/srcollX").then((function () {return resolve(__webpack_require__(/*! ../../components/srcollX.vue */ 118));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var soft = function soft() {__webpack_require__.e(/*! require.ensure | components/soft */ "components/soft").then((function () {return resolve(__webpack_require__(/*! ../../components/soft.vue */ 125));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var rank = function rank() {__webpack_require__.e(/*! require.ensure | components/rank */ "components/rank").then((function () {return resolve(__webpack_require__(/*! ../../components/rank.vue */ 148));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
+var _request = __webpack_require__(/*! ../../request/request.js */ 45);function _toConsumableArray(arr) {return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread();}function _nonIterableSpread() {throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");}function _unsupportedIterableToArray(o, minLen) {if (!o) return;if (typeof o === "string") return _arrayLikeToArray(o, minLen);var n = Object.prototype.toString.call(o).slice(8, -1);if (n === "Object" && o.constructor) n = o.constructor.name;if (n === "Map" || n === "Set") return Array.from(n);if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen);}function _iterableToArray(iter) {if (typeof Symbol !== "undefined" && Symbol.iterator in Object(iter)) return Array.from(iter);}function _arrayWithoutHoles(arr) {if (Array.isArray(arr)) return _arrayLikeToArray(arr);}function _arrayLikeToArray(arr, len) {if (len == null || len > arr.length) len = arr.length;for (var i = 0, arr2 = new Array(len); i < len; i++) {arr2[i] = arr[i];}return arr2;}var scrollX = function scrollX() {__webpack_require__.e(/*! require.ensure | components/srcollX */ "components/srcollX").then((function () {return resolve(__webpack_require__(/*! ../../components/srcollX.vue */ 118));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var soft = function soft() {__webpack_require__.e(/*! require.ensure | components/soft */ "components/soft").then((function () {return resolve(__webpack_require__(/*! ../../components/soft.vue */ 125));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var rank = function rank() {__webpack_require__.e(/*! require.ensure | components/rank */ "components/rank").then((function () {return resolve(__webpack_require__(/*! ../../components/rank.vue */ 132));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var showgoods = function showgoods() {__webpack_require__.e(/*! require.ensure | components/showgoods */ "components/showgoods").then((function () {return resolve(__webpack_require__(/*! ../../components/showgoods.vue */ 159));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
 
 
 {
   data: function data() {
     return {
+      id: 20100,
+      showgoodList_id: '',
+      showgood: [],
       today: [],
       swiperList: [],
       index: 0,
@@ -300,8 +303,20 @@ var _request = __webpack_require__(/*! ../../request/request.js */ 45);function 
       });
     },
     //切换主题切换数据
-    changeitem: function changeitem(v, i) {
-      this.index = i;
+    changeitem: function changeitem(i, id) {var _this2 = this;
+      this.index = i,
+      this.id = id;
+      (0, _request.request)({ url: '/v1/pdd/goods-list',
+        method: "GET", data: {
+          cat_id: this.id } }).
+      then(function (res) {
+        _this2.showgood = res.data.data.list;
+        _this2.showgoodList_id = res.data.data.list_id;
+        console.log(_this2.showgood);
+      }, function (err) {
+        console.log(err);
+      });
+
     },
     //轮播图主题跳转
     Gotheme: function Gotheme(v) {
@@ -316,21 +331,21 @@ var _request = __webpack_require__(/*! ../../request/request.js */ 45);function 
 
     },
     //获取今日热卖
-    getTodayShow: function getTodayShow() {var _this2 = this;
+    getTodayShow: function getTodayShow() {var _this3 = this;
       (0, _request.request)({
         url: '/v1/pdd/goods-list',
         method: 'GET',
         data: { channel_type: 7 } }).
       then(
       function (res) {
-        console.log(res);
-        _this2.today = res.data.data.list;
-        _this2.list_id = res.data.data.list_id;
+        _this3.today = res.data.data.list;
+        _this3.list_id = res.data.data.list_id;
       }, function (err) {
         console.log(err);
       });
     },
-    Loadmore: function Loadmore() {var _this3 = this;
+    //今日热卖滚动获取更多
+    Loadmore: function Loadmore() {var _this4 = this;
       (0, _request.request)({
         url: '/v1/pdd/goods-list',
         method: 'GET',
@@ -338,11 +353,35 @@ var _request = __webpack_require__(/*! ../../request/request.js */ 45);function 
           list_id: this.list_id } }).
 
       then(
-      function (res) {var _this3$today;
-        console.log(res);
+      function (res) {var _this4$today;
         var list = res.data.data.list;
-        (_this3$today = _this3.today).push.apply(_this3$today, _toConsumableArray(list));
-        _this3.list_id = res.data.data.list_id;
+        (_this4$today = _this4.today).push.apply(_this4$today, _toConsumableArray(list));
+        _this4.list_id = res.data.data.list_id;
+      }, function (err) {
+        console.log(err);
+      });
+    },
+    //根据id获取分类商品
+    getshowgood: function getshowgood() {var _this5 = this;
+      (0, _request.request)({ url: '/v1/pdd/goods-list',
+        method: "GET", data: {
+          cat_id: this.id } }).
+      then(function (res) {
+        _this5.showgood = res.data.data.list;
+        _this5.showgoodList_id = res.data.data.list_id;
+      }, function (err) {
+        console.log(err);
+      });
+    },
+    //分类商品触底加载更多
+    scrollto: function scrollto() {var _this6 = this;
+      (0, _request.request)({ url: '/v1/pdd/goods-list', method: 'GET', data: {
+          cat_id: this.id,
+          list_id: this.showgoodList_id } }).
+      then(function (res) {var _this6$showgood;
+        _this6.showgoodList_id = res.data.data.list_id;
+        var list = res.data.data.list;
+        (_this6$showgood = _this6.showgood).push.apply(_this6$showgood, _toConsumableArray(list));
       }, function (err) {
         console.log(err);
       });
@@ -351,12 +390,14 @@ var _request = __webpack_require__(/*! ../../request/request.js */ 45);function 
   components: {
     scrollX: scrollX,
     soft: soft,
-    rank: rank },
+    rank: rank,
+    showgoods: showgoods },
 
 
   mounted: function mounted() {
     this.getswiper();
     this.getTodayShow();
+    this.getshowgood();
   } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 

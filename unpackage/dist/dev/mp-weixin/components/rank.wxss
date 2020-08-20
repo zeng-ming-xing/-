@@ -1,9 +1,35 @@
 .rank {
   width: 100%;
-  border: 1px solid;
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;
   height: 90rpx;
+  background-color: #CCCCCC;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+}
+.rank .rank_item {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+          flex: 1;
+  font-size: 34rpx;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  height: 100%;
+}
+.rank .active {
+  background-color: #FFFFFF;
+  color: red;
 }
 

@@ -148,7 +148,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _request = __webpack_require__(/*! ../../request/request.js */ 45);var navbar = function navbar() {__webpack_require__.e(/*! require.ensure | components/navbar */ "components/navbar").then((function () {return resolve(__webpack_require__(/*! ../../components/navbar.vue */ 132));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
+var _request = __webpack_require__(/*! ../../request/request.js */ 45);var navbar = function navbar() {__webpack_require__.e(/*! require.ensure | components/navbar */ "components/navbar").then((function () {return resolve(__webpack_require__(/*! ../../components/navbar.vue */ 139));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
 
 
 {

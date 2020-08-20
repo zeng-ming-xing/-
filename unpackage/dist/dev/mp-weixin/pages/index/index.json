@@ -1,4 +1,6 @@
 {
   "navigationBarTitleText": "展示",
-  "usingComponents": {}
+  "usingComponents": {
+    "showgoods": "/components/showgoods"
+  }
 }

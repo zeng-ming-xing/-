@@ -1,1 +1,1 @@
-<view class="rank"><view class="default">默认</view><view class="cell">销量</view><view class="price">价格</view><view class="commission">佣金</view></view>
+<view class="rank"><block wx:for="{{rankdata}}" wx:for-item="v" wx:for-index="i" wx:key="i"><view data-event-opts="{{[['tap',[['changeitem',[i]]]]]}}" class="{{['rank_item',(index==i)?'active':'']}}" bindtap="__e">{{''+v+''}}</view></block></view>
